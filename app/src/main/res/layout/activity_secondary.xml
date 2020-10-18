@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondaryActivity">
+
+    <ImageView
+        android:id="@+id/clickToInsertPhoto_iv_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"
+        android:src="@drawable/click" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/details_et_secondaer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detail" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/color_et_secondaer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_color"
+            android:drawablePadding="16dp"
+            android:hint="Color" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/distance_et_secondaer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_distance"
+            android:drawablePadding="16dp"
+            android:hint="Distance Per Letter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description_et_secondaer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_description"
+            android:drawablePadding="16dp"
+            android:hint="Description" />
+
+    </LinearLayout>
+
+</LinearLayout>

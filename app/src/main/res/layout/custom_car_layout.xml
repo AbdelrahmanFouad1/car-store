@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/carImage_iv_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ferrari" />
+
+        <TextView
+            android:id="@+id/carName_tv_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carImage_iv_custom"
+            android:padding="4dp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:text="Ferrari" />
+
+        <TextView
+            android:id="@+id/carColor_tv_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/carName_tv_custom"
+            android:layout_alignParentLeft="true"
+            tools:text="Red"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/carDistance_tv_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/carName_tv_custom"
+            android:layout_alignParentRight="true"
+            tools:text="Red"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
